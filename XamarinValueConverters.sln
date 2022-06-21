@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinValueConverters.Android", "XamarinValueConverters\XamarinValueConverters.Android\XamarinValueConverters.Android.csproj", "{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinValueConverters", "XamarinValueConverters\XamarinValueConverters\XamarinValueConverters.csproj", "{FCB65320-3D34-4204-9617-1A6200BC12C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A4D14F-D605-4CCF-8419-E9B38BB4579F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FCB65320-3D34-4204-9617-1A6200BC12C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB65320-3D34-4204-9617-1A6200BC12C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB65320-3D34-4204-9617-1A6200BC12C2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FCB65320-3D34-4204-9617-1A6200BC12C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB65320-3D34-4204-9617-1A6200BC12C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB65320-3D34-4204-9617-1A6200BC12C2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {680FF22A-DCBC-4CC6-A85F-3559F35A4805}
+	EndGlobalSection
+EndGlobal

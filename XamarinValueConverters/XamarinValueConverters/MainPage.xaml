@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinValueConverters"
+             x:Class="XamarinValueConverters.MainPage"
+             Title="Value converters">
+    
+    <ContentPage.Resources>
+        <local:IsStringEmpty x:Key="EmptyString" />
+        <local:IsNotStringEmpty x:Key="FilledString" />
+        <local:ColorSwitcher x:Key="ColorSwitcher" />
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Entry x:Name="txb1">
+            <Entry.Triggers>
+                <DataTrigger TargetType="Entry" Binding="{Binding Text, Converter={StaticResource EmptyString}}">
+                    <Setter Property="BackgroundColor" Value="Red" />
+                </DataTrigger>
+            </Entry.Triggers>
+        </Entry>
+        <Entry x:Name="txb2" IsEnabled="{Binding Source={x:Reference txb1}, Converter={StaticResource FilledString}}" HorizontalOptions="Center" />
+        <BoxView BackgroundColor="{Binding Source={x:Reference txb2}, Converter={StaticResource ColorSwitcher}, ConverterParameter=FF}" />
+    </StackLayout>
+
+</ContentPage>
