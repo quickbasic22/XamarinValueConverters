@@ -13,6 +13,9 @@ namespace XamarinValueConverters
         public MainPage()
         {
             InitializeComponent();
+            txb1.Text = "";
+            txb2.Text = "1";
+            DisplayAlert(txb2.ToString(), txb2.IsEnabled.ToString(), "Ok");
         }
     }
 }

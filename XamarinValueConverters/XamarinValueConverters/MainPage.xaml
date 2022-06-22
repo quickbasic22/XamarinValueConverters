@@ -12,15 +12,15 @@
     </ContentPage.Resources>
 
     <StackLayout>
-        <Entry x:Name="txb1">
+        <Entry x:Name="txb1" Text="" WidthRequest="50">
             <Entry.Triggers>
-                <DataTrigger TargetType="Entry" Binding="{Binding Text, Converter={StaticResource EmptyString}}">
+                <DataTrigger TargetType="Entry" Binding="{Binding Source={x:Reference txb1}, Path=Text, Converter={StaticResource EmptyString}}" Value="true">
                     <Setter Property="BackgroundColor" Value="Red" />
                 </DataTrigger>
             </Entry.Triggers>
         </Entry>
-        <Entry x:Name="txb2" IsEnabled="{Binding Source={x:Reference txb1}, Converter={StaticResource FilledString}}" HorizontalOptions="Center" />
-        <BoxView BackgroundColor="{Binding Source={x:Reference txb2}, Converter={StaticResource ColorSwitcher}, ConverterParameter=FF}" />
+        <Entry x:Name="txb2" Text="1" IsEnabled="{Binding Source={x:Reference txb1}, Converter={StaticResource FilledString}}" HorizontalOptions="CenterAndExpand" />
+        <BoxView BackgroundColor="{Binding Source={x:Reference txb2}, Path=Text, Converter={StaticResource ColorSwitcher}, ConverterParameter=ff}" VerticalOptions="FillAndExpand" />
     </StackLayout>
 
 </ContentPage>

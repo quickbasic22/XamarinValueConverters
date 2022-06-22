@@ -18,7 +18,7 @@ namespace XamarinValueConverters
                 case "1":
                     return "#" + parameter + red;
                 case "2":
-                    return "*" + parameter + green;
+                    return "#" + parameter + green;
                 default:
                     return null;
             }
